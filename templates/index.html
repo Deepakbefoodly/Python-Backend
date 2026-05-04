@@ -8,9 +8,13 @@
                 Welcome to Wallet App
             {% endif %}
         </title>
+        <!-- Stylesheet -->
+<!--        <link rel="stylesheet"-->
+<!--          type="text/css"-->
+<!--          href="{{ url_for("static", path='css/main.css') }}">-->
     </head>
     <body>
-        <h1>We have total 2 wallets created</h1>
+        <h1>We have these wallets created</h1>
         {% for wallet in wallets %}
         <h2>{{wallet.id}}</h2>
         <h3>{{wallet.name}}</h3>
