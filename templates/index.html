@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>
+            {% if title %}
+                {{title}}
+            {% else %}
+                Welcome to Wallet App
+            {% endif %}
+        </title>
+    </head>
+    <body>
+        <h1>We have total 2 wallets created</h1>
+        {% for wallet in wallets %}
+        <h2>{{wallet.id}}</h2>
+        <h3>{{wallet.name}}</h3>
+        <h3 class="">{{wallet.amount}}</h3>
+        {% endfor %}
+    </body>
+</html>
